@@ -1,0 +1,63 @@
+
+MoviesController
+  When we send GET request to index
+.    Should go to homepage
+.    sort functionality should work when sorted by title
+.    sort functionality should work when sorted by date
+  Same director movies
+.    should return Movie.similar_movies
+.    If director exists then return similar movies
+.    If director is not known then should go to home page
+  for updates run PUT request
+.    updates an existing movie
+.    redirects to the movie page
+  GET #edit
+.    should find the movie
+.    should render the edit template
+  Movie should be Deleted
+.    delete a movie
+.    should go to homepage after delete is done
+  new template GET request
+.    new template should show up
+  POST to create a new movie
+.    New movie would be created
+.    redirects to the movie index page
+  show movies GET request
+.    That moview should show up
+.    should render the show template
+
+Home page
+.  Visiting the home page
+
+Show index page when filter is set
+.  filter is set
+
+Show index page when filter and rating is set
+.  filter is set
+
+Show index page when no filter or rating is set
+.  filter is set
+
+Movie
+  .find_similar_movies
+    director is present
+.      finds movies with same directors
+    director is not present
+.      for sad path
+  sorted and filter movies
+.    return sorted movies
+.    retuns filter movies
+  should return all ratings
+.    should see all ratings
+
+
+2 deprecation warnings total
+
+Finished in 0.36329 seconds (files took 1.5 seconds to load)
+26 examples, 0 failures
+
+Finished in 0.36329 seconds (files took 1.5 seconds to load)
+26 examples, 0 failures
+
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 77 / 79 LOC (97.47%) covered.
